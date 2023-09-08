@@ -1,0 +1,152 @@
+:root {
+  --Very_pale_blue: hsl(225, 100%, 98%);
+  --Desaturated_blue: hsl(224, 23%, 55%);
+  --Dark_blue: hsl(223, 47%, 23%);
+  --Pale_blue: hsl(225, 100%, 94%);
+  --Bright_blue: hsl(245, 75%, 52%);
+  --degraded_blue: hsla(228, 80%, 90%, 0.128);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--Pale_blue);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  padding: 15px;
+  color: var(--Very_pale_blue);
+  background-color: var(--Bright_blue);
+  box-shadow: 0 10px 20px 1px hsla(245, 75%, 52%, 0.3);
+  border-radius: 15px;
+  height: 60px;
+  border: none;
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#container {
+  width: 90vw;
+  height: 75vh;
+  background-color: var(--Very_pale_blue);
+  text-align: center;
+  margin: 100px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#top-section {
+  height: 20vh;
+  width: 100%;
+  background-image: url("./images/illustration-hero.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#bottom-section {
+  height: 80vh;
+  padding: 40px;
+}
+
+#bottom-section h2 {
+  margin: 0;
+  font-weight: 900;
+  color: var(--Dark_blue);
+}
+
+#bottom-section p {
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--Desaturated_blue);
+  font-size: 17px;
+}
+
+#song-card {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: var(--degraded_blue);
+  border-radius: 15px;
+  text-align: start;
+  width: 100%;
+}
+
+#song-card p {
+  margin: 0;
+  font-size: 15px;
+}
+
+#song-card img {
+  width: 60px;
+  margin-right: 20px;
+}
+
+#song-card__change {
+  justify-self: flex-end;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--Bright_blue);
+}
+
+#song-card__change :active {
+  color: var(--Bright_blue);
+}
+
+#song-card__change:hover {
+  text-decoration: none;
+  scale: 1.2;
+  opacity: 0.6;
+}
+
+#price {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+#song-card #bolded-text {
+  font-weight: 900;
+  word-spacing: 0.5px;
+  color: var(--Dark_blue);
+  font-size: 17px;
+}
+
+#bottom-section #cancel {
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--Desaturated_blue);
+}
+
+#bottom-section #cancel:hover {
+  color: var(--Dark_blue);
+}
+
+@media (min-width: 600px) {
+  #container {
+    width: 450px;
+    height: 73vh;
+  }
+
+  #song-card {
+    margin-bottom: 30px;
+  }
+}
